@@ -16,6 +16,10 @@ nav{
     overflow: hidden;
 }
 
+nav ul{
+text-align: center;
+}
+
 nav a{
     text-decoration: none;
     color: white;
