@@ -20,9 +20,30 @@
     </nav>
 
     <main>
-       
+        <section>
+            <h2>Post an Item</h2>
+            <form>
+                <!-- Item Name input -->
+                <label for="item-name">Item Name:</label><br>
+                <input type="text" id="item-name" name="item-name" required><br><br>
+
+                <!-- Description input -->
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" required></textarea><br><br>
+
+                <!-- Price input -->
+                <label for="price">Price:</label><br>
+                <input type="number" id="price" name="price" required><br><br>
+
+                <!-- Image URL input -->
+                <label for="image-url">Image URL:</label><br>
+                <input type="url" id="image-url" name="image-url"><br><br>
+
+                <input type="submit" value="Submit">
+
         </section>
     </main>
+        
     <script src="./code.js" defer></script>
 </body>
 </html>
