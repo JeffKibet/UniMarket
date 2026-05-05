@@ -36,4 +36,45 @@ nav a:hover{
     width: 100%;
     height: auto;
     margin-top: 20px;
+    border-radius: 8px;
+}
+
+main{
+    padding: 20px;
+}
+
+form{
+     max-width: 650px;
+    margin: 20px auto;
+}
+
+form label{
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form input[type="submit"]{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+footer{
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
