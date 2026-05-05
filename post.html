@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Product Details</title>
+    <title>Post an Item</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -23,7 +23,7 @@
     <main>
         <section>
             <h2>Got something to sell?</h2>
-            <form>
+            <form id="post-form">
                 <!-- Item Name input -->
                 <label for="item-name">Item Name:</label><br>
                 <input type="text" id="item-name" name="item-name" required><br><br>
@@ -41,6 +41,7 @@
                 <input type="file" id="image" name="image/*" accept="image/*"><br><br>
 
                 <input type="submit" value="Submit">
+            </form>
 
         </section>
     </main>
