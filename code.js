@@ -62,8 +62,24 @@ if (itemList) {
 
     items.forEach((item) => {
         const div = document.createElement("div");
-    });
+    
+
+
+//  the below code creates the HTML content for one product and puts it inside a <div>.
+div.innerHTML = `
+    <h3>${item.name}</h3>
+   <img src="${item.image}"
+   <p>KES ${item.price}</p>
+   <a href="product.html?id=${item.id}">View Details</a>
+`;
+
+itemlist.appendChild(div);  
+});
 }
+
+// product.html
+
+
 
 
 
