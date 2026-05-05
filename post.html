@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Post an Item</h1>
+    </header>
+    <!-- Navigation -->
+    <nav>
+         <ul>
+            <a href="./index.html">Home</a>
+            <a href="./product.html">Products</a>
+            <a href="./post.html">Post</a>
+            <a href="#contact">Contact</a>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Got something to sell?</h2>
+            <form>
+                <!-- Item Name input -->
+                <label for="item-name">Item Name:</label><br>
+                <input type="text" id="item-name" name="item-name" required><br><br>
+
+                <!-- Description input -->
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" required></textarea><br><br>
+
+                <!-- Price input -->
+                <label for="price">Price:</label><br>
+                <input type="number" id="price" name="price" required><br><br>
+
+                <!-- Image URL input -->
+                <label for="image-url">Image URL:</label><br>
+                <input type="file" id="image" name="image/*" accept="image/*"><br><br>
+
+                <input type="submit" value="Submit">
+
+        </section>
+    </main>
+
+    <footer>
+        <p> 2026 Unimarket. All rights reserved.</p>
+    </footer>
+        
+    <script src="./code.js" defer></script>
+</body>
+</html>
