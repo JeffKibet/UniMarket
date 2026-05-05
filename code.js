@@ -20,12 +20,29 @@ if (postForm) {
         const Description = document.getElementById("description").value;
         const Price = document.getElementById("price").value;
         const Image = document.getElementById("image").files[0];
+        
+        // Validation
+        if (!Name || !Description || !Price || !Image) {
+            alert("Please fill in all fields and select an image.");
+            return;
+        }
+        
+        const reader = new FileReader();
+        reader.onload = function() {
+            const imageData = reader.result;
+            
+            const item = getItem();
+            const newItem = {
+                name: Name,
+                description: Description,
+                price: Price,
+                image: imageData
+            };
+            item.push(newItem);
+            saveItem(item);
+        };
+        
+        reader.readAsDataURL(Image);
     });
-}
-
-// Validation
-if (!Name || !Description || !Price || !Image) {
-    alert("Please fill in all fields and select an image.");
- return;
 }
     
