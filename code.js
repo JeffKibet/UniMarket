@@ -40,9 +40,13 @@ if (postForm) {
             };
             item.push(newItem);
             saveItem(item);
+
+            // Redirect to product page
+            window.location.href = "product.html";
         };
         
-        reader.readAsDataURL(Image);
+        // the code below reads the uploaded image file and turns it into a format the browser can store and display
+        reader.readAsDataURL(Image);    
     });
 }
     
