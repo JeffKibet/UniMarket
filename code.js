@@ -48,5 +48,7 @@ if (postForm) {
         // the code below reads the uploaded image file and turns it into a format the browser can store and display
         reader.readAsDataURL(Image);    
     });
+
 }
+
     
