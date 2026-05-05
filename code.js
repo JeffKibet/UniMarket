@@ -48,7 +48,23 @@ if (postForm) {
         // the code below reads the uploaded image file and turns it into a format the browser can store and display
         reader.readAsDataURL(Image);    
     });
-
 }
+
+// index.html
+const itemList = document.getElementById("itemlist");
+
+if (itemList) {
+    const items = getItem();
+
+    if (items.length === 0) {
+        itemList.innerHTML = "<p>No items available. Please check back later.</p>";
+    }
+
+    items.forEach((item) => {
+        const div = document.createElement("div");
+    });
+}
+
+
 
     
