@@ -37,10 +37,22 @@ nav a:hover{
     height: auto;
     margin-top: 20px;
     border-radius: 8px;
+    box-shadow: black;
 }
 
+.hero img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 main{
     padding: 20px;
+}
+
+#itemlist ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 form{
