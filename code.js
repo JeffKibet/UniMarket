@@ -78,7 +78,26 @@ itemlist.appendChild(div);
 }
 
 // product.html
+const productDetails = document.getElementById("product-details");
 
+if (productDetails) {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    const items = getItem();
+    const item = items.find(i => i.id === id);
+
+    if (!item) {
+        productDetails.innerHTML = "<p>Item not found.</p>";
+    } else {
+        productDetails.innerHTML = `
+            <h2>${item.name}</h2>
+            <img src="${item.image}" alt="${item.name}">
+            <p><strong>Description:</strong> ${item.description}</p>
+               <p><strong>Price:</strong> KES ${item.price}</p>  
+    `;
+    }
+}
 
 
 
