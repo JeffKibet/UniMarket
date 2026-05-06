@@ -33,6 +33,7 @@ if (postForm) {
             
             const item = getItem();
             const newItem = {
+                id: Date.now(),
                 name: Name,
                 description: Description,
                 price: Price,
@@ -42,7 +43,7 @@ if (postForm) {
             saveItem(item);
 
             // Redirect to product page
-            window.location.href = "product.html";
+            window.location.href = `product.html?id=${newItem.id}`;
         };
         
         // the code below reads the uploaded image file and turns it into a format the browser can store and display
@@ -68,12 +69,12 @@ if (itemList) {
 //  the below code creates the HTML content for one product and puts it inside a <div>.
 div.innerHTML = `
     <h3>${item.name}</h3>
-   <img src="${item.image}"
+   <img src="${item.image}">
    <p>KES ${item.price}</p>
    <a href="product.html?id=${item.id}">View Details</a>
 `;
 
-itemlist.appendChild(div);  
+itemList.appendChild(div);  
 });
 }
 
@@ -85,7 +86,7 @@ if (productDetails) {
     const id = params.get("id");
 
     const items = getItem();
-    const item = items.find(i => i.id === id);
+    const item = items.find(i => i.id == id);
 
     if (!item) {
         productDetails.innerHTML = "<p>Item not found.</p>";
