@@ -66,3 +66,42 @@ Scenario 4: No items available
 Given: No items have been posted
 When: The user visits the homepage
 Then: A message is displayed indicating no items are available
+
+Technologies Used
+HTML - Structure and layout
+CSS3 - Styling and responsive design
+JavaScript - For interaction
+localStorage - Data persistence
+FileReader API - Image upload handling
+DOM Manipulation - Dynamic content rendering
+
+Poject Structure
+UniMarket/
+│
+├── index.html        - Homepage (displays all items)
+├── product.html      - Single product details page
+├── post.html         - Form to add new items
+├── style.css         - Styling
+├── code.js           - JavaScript logic
+└── README.md         - Project documentation
+
+Key Features
+Post items with images
+View all listings on homepage
+View individual product details
+Data persistence using localStorage
+Form validation and error handling
+
+Future Improvements
+User authentication system
+Communication between buyers and sellers
+Search and filter functionality
+Image hosting (instead of localStorage)
+Responsive UI improvements
+
+License and Copyright
+
+Copyright © 2026 Jeff Kibet
+
+This project is licensed under the MIT License.
+
