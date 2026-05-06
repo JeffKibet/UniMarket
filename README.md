@@ -104,4 +104,7 @@ License and Copyright
 Copyright © 2026 Jeff Kibet
 
 This project is licensed under the MIT License.
+Permission is granted, free of charge, to anyone who obtains a copy of this software and its documentation to use it without restriction. This includes the rights to use, copy, modify, merge, publish, distribute, sublicense, or sell the software, and to allow others to do the same.The only requirement is that this copyright notice and permission statement must be included in all copies or significant portions of the software.
+This software is provided “as is,” without any guarantees or warranties of any kind, whether expressed or implied. This includes, but is not limited to, warranties of merchantability, fitness for a specific purpose, or non-infringement.
 
+The authors or copyright holders are not responsible for any claims, damages, or liabilities that may arise from the use of the software, whether in a contract, tort, or any other legal situation.
