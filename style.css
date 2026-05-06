@@ -53,6 +53,7 @@ main{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
 }
 
 .jeff1:hover{
@@ -60,11 +61,18 @@ main{
     transition: background-color 0.3s ease;
 }
 
-/* #itemlist{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+#itemlist{
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-} */
+}
+
+#itemlist div{
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+    border-radius: 8px;
+}
 
 #contact{
     background-color: #f9f9f9;
