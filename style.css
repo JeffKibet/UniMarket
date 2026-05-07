@@ -119,6 +119,7 @@ footer{
     position: fixed;
     width: 100%;
     bottom: 0;
+    height: 40px;
 }
 
 #product-details{
@@ -126,6 +127,7 @@ footer{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding-bottom: 100px;
 }
 
 #product-details:hover{
@@ -143,4 +145,15 @@ footer{
 #Pilar:hover{
     background-color: #e0e0e0;
     transition: background-color 0.3s ease;
+}
+
+#buy{
+   background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
 }

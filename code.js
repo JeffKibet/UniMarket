@@ -50,25 +50,26 @@ if (postForm) {
 
         // Redirect to product page
         window.location.href = `product.html?id=${newItem.id}`;
-      };
-
+      };  // Redirects to product page with ID
+      
       // the code below reads the uploaded image file and turns it into a format the browser can store and display
       reader.readAsDataURL(Image);
-    });
+    }); // Converts image into string so it can be stored
 }
 
-// index.html
+
+    // index.html
 const itemList = document.getElementById("itemlist");
 
 if (itemList) {
     const items = getItem();
 
-    if (items.length === 0) {
+    if (items.length === 0) {    // if there are no items in the list
         itemList.innerHTML = "<p>No items available. Please check back later.</p>";
     }
 
     items.forEach((item) => {
-        const div = document.createElement("div");
+        const div = document.createElement("div");  // Creates a container for each item
     
 
 
@@ -77,10 +78,10 @@ div.innerHTML = `
     <h3>${item.name}</h3>
    <img src="${item.image}">
    <p>KES ${item.price}</p>
-   <a href="product.html?id=${item.id}">View Details</a>
-`;
+   <a href="product.html?id=${item.id}">View Details</a> 
+`; // Link to product page with ID
 
-itemList.appendChild(div);  
+itemList.appendChild(div);   // Adds item to page
 });
 }
 
@@ -88,11 +89,11 @@ itemList.appendChild(div);
 const productDetails = document.getElementById("product-details");
 
 if (productDetails) {
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get("id");
+    const params = new URLSearchParams(window.location.search);  // Reads URL parameters
+    const id = params.get("id");  // Gets item ID from URL
 
     const items = getItem();
-    const item = items.find(i => i.id == id);
+    const item = items.find(i => i.id == id);  // Finds the ONE item with matching ID
 
     if (!item) {
         productDetails.innerHTML = "<p>Item not found.</p>";
